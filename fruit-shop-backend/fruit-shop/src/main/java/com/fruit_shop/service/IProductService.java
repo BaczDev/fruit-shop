@@ -5,7 +5,7 @@ import com.fruit_shop.dto.response.product.ProductResponse;
 
 import java.util.List;
 
-public interface ProductService {
+public interface IProductService {
     //tao san pham moi
     ProductResponse createProduct(ProductRequest request);
 

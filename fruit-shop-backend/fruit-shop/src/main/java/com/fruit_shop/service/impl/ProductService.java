@@ -8,6 +8,7 @@ import com.fruit_shop.exception.AppException;
 import com.fruit_shop.exception.ErrorCode;
 import com.fruit_shop.repository.CategoryRepository;
 import com.fruit_shop.repository.ProductRepository;
+import com.fruit_shop.service.IProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +16,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class ProductService implements com.fruit_shop.service.ProductService {
+public class ProductService implements IProductService {
 
     private final ProductRepository productRepository;
     private final CategoryRepository categoryRepository;

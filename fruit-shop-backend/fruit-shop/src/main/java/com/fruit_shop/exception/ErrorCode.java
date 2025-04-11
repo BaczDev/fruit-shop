@@ -24,6 +24,13 @@ public enum ErrorCode {
     PRODUCT_PRICE_IS_EMPTY(9, "giá sản phẩm rỗng",HttpStatus.BAD_REQUEST),
     PRODUCT_QUANTITY_IS_EMPTY(10, "số lượng sản phẩm rỗng",HttpStatus.BAD_REQUEST),
     CATEGORY_ID_IS_EMPTY(11, "id danh mục rỗng",HttpStatus.BAD_REQUEST),
+
+    //product image
+    FILE_IS_NULL(12, "file is null", HttpStatus.BAD_REQUEST),
+    FILE_TOO_LARGE(13, "File is too large! Maximum size is 10MB", HttpStatus.BAD_REQUEST),
+    INVALID_FILE_FORMAT(14, "File must be an image", HttpStatus.BAD_REQUEST),
+    FILE_UPLOAD_FAILED(15,"Failed to upload file", HttpStatus.BAD_REQUEST),
+    PRODUCT_IMAGE_NOT_FOUND(16, "product image not found", HttpStatus.BAD_REQUEST),
     ;
 
     private int errorCode;

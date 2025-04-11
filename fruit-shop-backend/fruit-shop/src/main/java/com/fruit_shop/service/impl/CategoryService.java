@@ -6,6 +6,7 @@ import com.fruit_shop.entity.Category;
 import com.fruit_shop.exception.AppException;
 import com.fruit_shop.exception.ErrorCode;
 import com.fruit_shop.repository.CategoryRepository;
+import com.fruit_shop.service.ICategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +14,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class CategoryService implements com.fruit_shop.service.CategoryService {
+public class CategoryService implements ICategoryService {
     private final CategoryRepository categoryRepository;
 
     @Override

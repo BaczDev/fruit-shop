@@ -5,7 +5,7 @@ import com.fruit_shop.dto.response.category.CategoryResponse;
 
 import java.util.List;
 
-public interface CategoryService {
+public interface ICategoryService {
     List<CategoryResponse> getAllCategory();
     List<CategoryResponse> getCategoryEnable();
     CategoryResponse createCategory(CategoryRequest request);
